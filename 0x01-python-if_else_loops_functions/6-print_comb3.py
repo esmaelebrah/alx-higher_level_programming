@@ -1,9 +1,9 @@
 #!/usr/bin/python3
-for x in  range(0, 10):
-    for y in range(x, 10):
-        if x < y:
-            print(str(x) +str(y), end=", ")
-        elif y < x:
-            print(str(y) + str(x), end=", ")
-        elif y == 9:
-            print(str(x) + str(y))
+for i in  range(0, 10):
+    for j in range(i, 10):
+        if i < j and  j == 9 and i >= 8:
+            print(str(i) +str(j))
+        elif j < i:
+            print(str(j) + str(i), end=", ")
+        elif i < j:
+            print(str(i) + str(j), end=", ")
