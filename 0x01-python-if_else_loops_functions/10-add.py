@@ -1,4 +1,5 @@
 #!/usr/bin/python3
 def add(a, b):
-    print("{:d}".format(a + b))
-    return (a + b)
+    c = a + b
+    print("{:d}".format(c))
+    return (c)
