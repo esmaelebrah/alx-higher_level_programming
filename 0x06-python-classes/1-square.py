@@ -8,4 +8,7 @@ class Square:
     size of side of swuare
     """
     def __init__(self, size):
+        """insialize the sixw
+        return:None
+        """
         self.__size = size
