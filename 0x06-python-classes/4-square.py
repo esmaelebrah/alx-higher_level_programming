@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""Square class definition"""
+"""Defines a class Square"""
 
 
 class Square:
@@ -9,33 +9,42 @@ class Square:
         __size (int): size of a side of the square
     """
     def __init__(self, size=0):
-        """Initializes a square
+        """initializes the square
 
         Args:
             size (int): size of a side of the square
 
-        Returns: None
+        Returns:
+            None
         """
         self.size = size
 
     def area(self):
-        """public class
+        """calculates the square's area
 
-        return: area of the square
+        Returns:
+            The area of the square
         """
-        return (self.__size * self.__size)
+        return (self.__size) ** 2
+
     @property
     def size(self):
-        """ get nalue fun
+        """getter of __size
 
-        return: size of square
+        Returns:
+            The size of the square
         """
-        return (self.__size)
+        return self.__size
+
     @size.setter
     def size(self, value):
-        """the setter method
+        """setter of __size
 
-        sets the value of size
+        Args:
+            value (int): the size of a size of the square
+
+        Returns:
+            None
         """
         if type(value) is not int:
             raise TypeError("size must be an integer")
