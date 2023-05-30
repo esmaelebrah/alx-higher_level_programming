@@ -5,6 +5,7 @@
 class Square:
     """private atribute
     __size 
-    size of side of swuare"""
+    size of side of swuare
+    """
     def __init__(self, size):
         self.__size = size
