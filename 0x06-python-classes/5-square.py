@@ -41,22 +41,24 @@ class Square:
         """setter of __size
 
         Args:
-            value (int): the size of a size of the square
+            value (int): size of a side of the square
 
         Returns:
             None
         """
         if type(value) is not int:
             raise TypeError("size must be an integer")
-        elif value < 0:
-            raise ValueError("size must be >= 0")
         else:
-            self.__size = value
-    def my_print(self):
-        """print # 
-        with square shape with sie
+            if value < 0:
+                raise ValueError("size must be >= 0")
+            else:
+                self.__size = value
 
-        return: None
+    def my_print(self):
+        """prints the square
+
+        Returns:
+            None
         """
         if self.__size == 0:
             print()
