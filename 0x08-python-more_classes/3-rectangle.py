@@ -51,10 +51,10 @@ class Rectangle:
 
     def __str__(self):
         """returns printable string representation of the rectangle"""
-        st = "\n"
+        st = ""
         if self.__width != 0 and self.__height != 0:
             for i in range(self.__height):
                 for j in range(self.__width):
                     st += "#"
                 st += "\n"
-        return string
+        return st
