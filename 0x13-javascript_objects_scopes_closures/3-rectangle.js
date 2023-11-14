@@ -9,12 +9,9 @@ class Rectangle {
   }
 
   print () {
-	  for (let i = 0; i < this.height; i++) {
-		  let sum = "";
-		  for (let j = 0; j < this.width; j++) sum += "X";
-
-		  console.log(sum);
-	  } 
+    for (let i = 0; i < this.height; i++) {
+      console.log('X'.repeat(this.width));
+    }
   }
 }
 
