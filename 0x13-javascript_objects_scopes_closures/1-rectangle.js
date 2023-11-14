@@ -1,5 +1,5 @@
 #!/usr/bin/node
-// classs rectangular with constructor
+// rectangular class that has constructor with width and height
 
 class Rectangle {
 	constructor(w, h) {
