@@ -8,9 +8,9 @@ class Rectangle {
     }
   }
 
-  print () {
+  print (optArg="X") {
     for (let i = 0; i < this.height; i++) {
-      console.log('X'.repeat(this.width));
+      console.log(optArg.repeat(this.width));
     }
   }
 
