@@ -7,6 +7,15 @@ class Rectangle {
       this.height = h;
     }
   }
+
+  print () {
+	  for (let i = 0; i < this.height; i++) {
+		  let sum = "";
+		  for (let j = 0; j < this.width; j++) sum += "X";
+
+		  console.log(sum);
+	  } 
+  }
 }
 
 module.exports = Rectangle;
